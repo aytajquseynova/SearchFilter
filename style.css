@@ -1,0 +1,74 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #0398fc;
+    color: white;
+    border: 2px solid #9793bd;
+    margin-bottom: 10px;
+}
+
+.logo {
+    text-align: center;
+}
+
+.search-area {
+    margin-top: 10px;
+}
+
+.search-area input,
+button {
+    padding: 15px;
+    cursor: pointer;
+}
+
+.send {
+    background-color: #0398fc;
+    color: white;
+    border: 2px solid #9793bd;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.send input {
+    padding: 15px;
+}
+
+.send textarea {
+    padding: 8px;
+    text-align: center;
+}
+
+.send button {
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.send button:hover {
+    background-color: #d9fdd3;
+    color: black;
+}
+
+.itemsBox {
+    background: #0398fc;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+#rowBox {
+    display: flex;
+    justify-content: space-between;
+    background: #0398fc;
+    padding: 20px;
+    color: white;
+    border: 2px solid #9793bd;
+}
+
+#remove button:hover {
+    background-color: #ff0000;
+    color: White;
+}
