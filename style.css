@@ -12,11 +12,11 @@
     text-align: center;
 }
 
-.search-area {
+#search-area {
     margin-top: 10px;
 }
 
-.search-area input,
+#search-area input,
 button {
     padding: 15px;
     cursor: pointer;

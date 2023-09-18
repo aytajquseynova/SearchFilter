@@ -85,3 +85,29 @@ send.addEventListener('click', function () {
     })
     //all item remove click function ends
 })
+
+//search filter
+    let search = document.getElementById('search');
+    search.addEventListener('keyup', function () {
+        let searchValue = search.value.toLowerCase();
+        let items = document.querySelectorAll('.itemsBox > div');
+        items.forEach(function (item) {
+            let title = item.querySelector('ul li:first-child').textContent.toLowerCase();
+            let desc = item.querySelector('ul li:nth-child(2)').textContent.toLowerCase();
+            if (title.includes(searchValue) || desc.includes(searchValue)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }    
+        });
+        // let boxItems = document.querySelectorAll('#rowBoxContent > div');
+        // boxItems.forEach(function(item){
+        //     let htmlElements = item.querySelector('ul li:first-child').textContent.toLowerCase();
+        //     let descElement = item.querySelector('ul li:nth-child(2').textContent.toLowerCase();
+        //     if((htmlElements.includes(searchValue)) || descElement.includes(searchValue)){
+        //         item.style.display ="block";
+        //     } else{
+        //         item.style.display ="none";
+        //     }
+        // })
+    });
